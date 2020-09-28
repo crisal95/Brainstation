@@ -32,7 +32,7 @@ li ol>li:before {
 .navigation {
    border: 1px solid black;
    width: 400px;
-   position: absolute;
+
 }
 
 .aside-div {
@@ -50,9 +50,25 @@ main {
 
 .left-aside {
    float: left;
+   border: 1px solid lightgray;
+   padding: 10px;
+   width: 150px;
+   background-color: #e3e1e1;
 }
 
 .left-aside ul {
    list-style-type: none;
-   height: 100%;
+}
+
+.right-nav {
+float: right;
+}
+
+.art {
+   margin-left: 200px;
+}
+
+.footer {
+   background-color: #e3e1e1;
+   margin-left: 200px;
 }
