@@ -111,3 +111,9 @@ body {
 overflow: auto;
 float: left;
 }
+li{
+   margin: 0.125rem;
+}
+nav a {
+   margin: 0.125rem;
+}
