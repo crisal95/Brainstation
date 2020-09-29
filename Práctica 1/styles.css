@@ -66,6 +66,7 @@ main {
    padding-left: 1rem;
 }
 
+
 .right-nav {
    float: right;
 }
@@ -90,4 +91,18 @@ body {
    display: flex;
    flex-direction: column;
    justify-content: space-between;
+}
+
+.left-nav {
+   float: left;
+}
+
+.header-nav {
+   margin-top: 3rem;
+}
+
+.asides {
+   display: flex;
+   justify-content: space-between;
+  
 }
