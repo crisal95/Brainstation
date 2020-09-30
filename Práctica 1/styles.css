@@ -1,3 +1,7 @@
+body {
+   margin: 0;
+}
+
 .aside-table {
    border: 1px solid lightgray;
 }
@@ -41,11 +45,12 @@ li ol>li:before {
 }
 
 main {
-   float: right;
    margin-left: 10.65rem;
-   position: relative;
    padding-left: 0.625rem;
    padding-right: 0.625rem;
+   bottom: 9.375rem;
+   padding-top: 5rem;
+   padding-bottom: 9.735rem;
 }
 
 .aside-right {
@@ -53,12 +58,11 @@ main {
 }
 
 .left-menu {
-   float: left;
    padding-right: 1.3rem;
    width: 9.375rem;
    background-color: #e3e1e1;
-   position: absolute;
    height: 100%;
+   position: absolute;
 }
 
 .left-menu ul {
@@ -75,25 +79,24 @@ main {
 .footer {
    background-color: #e3e1e1;
    height: 9.375rem;
-   position: relative;
    margin-left: 10.65rem;
+   width: calc(100% - 11rem);
+   position: absolute;
+   bottom: 0;
+
 }
 
 .top-header {
    background-color: #e3e1e1;
    height: 5rem;
-   position: relative;
    margin-left: 10.65rem;
-
+   position: absolute;
+   top: 0;
+   width: calc(100% - 11rem);
 }
 
-body {
-   display: flex;
-   flex-direction: column;
-   justify-content: space-between;
-   position: absolute;
-   margin:0;
-    padding:0;
+.container {
+   position: relative;
 }
 
 .left-nav {
@@ -104,11 +107,7 @@ body {
    margin-top: 3rem;
 }
 
-.asides {
-   display: flex;
-   justify-content: space-between;
-
-}
+.asides {}
 
 .four {
    overflow: auto;
