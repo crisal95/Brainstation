@@ -170,7 +170,7 @@ nav a {
    padding: 1rem 1rem 0;
 }
 
-.top-header li a:hover:not(.active) {
+.top-header li a:hover {
    background-color: #212F37;
 }
 

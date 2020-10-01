@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="navbar">
+            <div class="left-navbar">
+                <a href="">Item 1</a>
+                <a href="">Item 2</a>
+                <a href="">Item 3</a>
+            </div>
+            <div class="right-navbar">
+                <i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i>
+                <i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i>
+                <i class="fa fa-instagram fa-3x" aria-hidden="true"></i>
+            </div>
+
+
+        </div>
+        <div id="grid" class="grid">
+            <div id="box" class="box box1">
+                <img class="image-painting" src="./painting/1.png" alt="">
+            </div>
+            <div class="box box2">
+                <img class="image-painting" src="./painting/2.png" alt="">
+            </div>
+            <div class="box box3">
+                <img class="image-painting" src="./painting/3.png" alt="">
+            </div>
+            <div class="box box4">
+                <img class="image-painting" src="./painting/4.png" alt="">
+            </div>
+            <div class="box box5">
+                <img class="image-painting" src="./painting/5.png" alt="">
+            </div>
+            <div class="box box6">
+                <img class="image-painting" src="./painting/6.png" alt="">
+            </div>
+            <div class="box box7">
+                <img class="image-painting" src="./painting/7.png" alt="">
+            </div>
+            <div class="box box8">
+                <img class="image-painting" src="./painting/8.png" alt="">
+            </div>
+            <div class="box box9">
+                <img class="image-painting" src="./painting/9.png" alt="">
+            </div>
+            <div class="box box10">
+                <img class="image-painting" src="./painting/10.png" alt="">
+            </div>
+            <div class="box box11">
+                <img class="image-painting" src="./painting/11.png" alt="">
+            </div>
+            <div class="box box12">
+                <img class="image-painting" src="./painting/12.png" alt="">
+            </div>
+            <div class="box box13">
+                <img class="image-painting" src="./painting/13.png" alt="">
+            </div>
+            <div class="box box14">
+                <img class="image-painting" src="./painting/14.png" alt="">
+            </div>
+            <div class="box box15">
+                <img class="image-painting" src="./painting/15.png" alt="">
+            </div>
+            <div class="box box16">
+                <img class="image-painting" src="./painting/16.png" alt="">
+            </div>
+
+        </div>
+        <button class="painting-button" onclick="onClick()"><span>Click to reveal the painting</span></button>
+        <div class="animation">
+            <img src="./gif/1.gif" alt="">
+        </div>
+    </div>
+</body>
+<script>
+    function onClick() {
+        var boxes = document.getElementsByClassName('box');
+        var grid = document.getElementById('grid');
+        if (localStorage.getItem("click") === "1") {
+            localStorage.clear();
+            grid = document.getElementById('grid').style.alignContent = "space-around";
+            grid = document.getElementById('grid').style.justifyContent = "space-around";
+
+            for (var i = 0; i < boxes.length; i++) {
+                boxes[i].style.border = "3px solid";
+            }
+        } else {
+            if (!localStorage.getItem("click")) {
+                window.localStorage.removeItem("click");
+                window.localStorage.setItem("click", "1");
+                grid = document.getElementById('grid').style.alignContent = "center";
+                grid = document.getElementById('grid').style.justifyContent = "center";
+
+                for (var i = 0; i < boxes.length; i++) {
+                    boxes[i].style.border = "0.1px solid";
+                }
+            }
+        }
+
+
+
+    }
+</script>
+
+</html>

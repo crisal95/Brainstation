@@ -1,0 +1,143 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/*navbar*/
+.navbar {
+    display: flex;
+    height: 4rem;
+    width: 100%;
+    background-color: #42b9f5;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    flex-direction: row;
+}
+
+.left-navbar {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    align-content: flex-end;
+}
+
+.left-navbar a {
+    text-decoration: none;
+    padding: 1rem 1rem 0 1rem;
+    color: black;
+    border-left: 1px solid blue;
+}
+
+.left-navbar a:hover {
+    background-color: white;
+}
+
+.right-navbar {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.right-navbar i {
+    padding-left: 0.5rem;
+}
+
+.right-navbar i:hover {
+    color: white;
+}
+
+/**/
+
+/*grid*/
+.grid {
+    height: 50rem;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+
+
+/**/
+/*animation*/
+.animation {
+    
+    border: 3px solid black;
+    background-image: url("./gif/mario-level.jpg");
+    background-size: contain;
+}
+@keyframes move {
+    from {
+      margin-left: 80%;
+    }
+  
+    to {
+      margin-left: 0%;
+    }
+  }
+  @keyframes change-image {
+    from {
+        content: url("./gif/2.gif");
+    }
+  
+    to {
+        content: url("./gif/3.gif");
+    }
+  }
+  .animation img {
+ animation: 
+    move 3s ease infinite alternate, 
+    change-image 0.1s linear infinite alternate;
+  }
+  /**/
+
+
+/*boxes*/
+.box {
+    width: 20%;
+    height: 8rem;
+    background-color: yellow;
+    border: 3px solid;
+    }
+.box16 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border:30px solid transparent;
+    border-image:url("./image.png") 10%;
+}
+.box16 span {
+    font-size: xx-large;
+}
+
+.image-painting {
+    width: 100%;
+    height: 100%;
+}
+
+.painting-button {
+   
+    align-self: center;
+    margin-bottom: 2rem;
+    background-color: #42b9f5;
+}
+.painting-button span {
+font-size: x-large;
+}
