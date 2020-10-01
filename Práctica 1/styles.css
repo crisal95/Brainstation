@@ -38,7 +38,9 @@ h1 {
 .aside-table {
    border: 0.0625rem solid lightgray;
 }
-.aside-table td, .aside-table tr {
+
+.aside-table td,
+.aside-table tr {
    padding-left: 1rem;
 
 }
@@ -108,7 +110,9 @@ main {
    float: left;
 }
 
-li, td, tr {
+li,
+td,
+tr {
    margin: 0.125rem;
    font-family: 'Poppins', sans-serif;
 }
@@ -118,8 +122,21 @@ nav a {
 }
 
 .image {
+   padding: 1rem;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   border: 0.0625rem solid lightgray;
+   background-color: white;
+   
+}
+.no-border {
+   border: 0;
+   background-color: transparent;
+}
+
+.caption p {
    text-align: center;
-   overflow: hidden;
 }
 
 .top-header {
@@ -166,7 +183,7 @@ nav a {
    position: relative;
 }
 
-.display-table{ 
+.display-table {
    display: table;
 }
 
@@ -239,24 +256,25 @@ li ol>li:before {
 .dropdown {
    position: relative;
    display: inline-block;
- }
- 
- .dropdown-content {
+}
+
+.dropdown-content {
    display: none;
    position: absolute;
    background-color: #ea6c57;
    width: 10.7rem;
    z-index: 1;
- }
- 
- .dropdown:hover .dropdown-content {
-   display: block;
- }
- .dropdown li:hover{
-   background-color: #212F37;
- }
+}
 
- .dropdown-button {
-    background-color: transparent;
-    border: transparent;
- }
+.dropdown:hover .dropdown-content {
+   display: block;
+}
+
+.dropdown li:hover {
+   background-color: #212F37;
+}
+
+.dropdown-button {
+   background-color: transparent;
+   border: transparent;
+}
