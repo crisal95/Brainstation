@@ -2,10 +2,211 @@ body {
    margin: 0;
 }
 
-.aside-table {
-   border: 1px solid lightgray;
+p {
+   color: #0F1416;
+   font-family: 'Poppins', sans-serif;
+   line-height: 1.5;
 }
 
+h2 {
+   font-weight: normal;
+}
+
+.regular-font {
+   font-family: 'Poppins', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-family: 'Noto Serif', serif;
+}
+
+h1 {
+   font-size: 3.125rem;
+   font-weight: 800;
+   margin-bottom: 0.625rem;
+}
+
+.strong {
+   font-weight: bold;
+}
+
+.aside-table {
+   border: 0.0625rem solid lightgray;
+}
+.aside-table td, .aside-table tr {
+   padding-left: 1rem;
+
+}
+
+a {
+   text-decoration: none;
+}
+
+.navigation {
+   border: 0.0625rem solid lightgray;
+   margin: auto;
+   margin-bottom: 5rem;
+   width: 60%;
+
+}
+
+.aside-div {
+   border: 0.0625rem solid lightgray;
+
+}
+
+main {
+   margin-left: 10.65rem;
+   padding-left: 1rem;
+   padding-right: 0.625rem;
+   bottom: 9.375rem;
+   padding-top: 5rem;
+   padding-bottom: 9.735rem;
+}
+
+.aside-right {
+   float: right;
+}
+
+.left-menu {
+   padding-right: 1.3rem;
+   padding-left: 0.2rem;
+   width: 9.375rem;
+   height: 100%;
+   position: absolute;
+}
+
+.left-menu ul {
+   list-style-type: none;
+   padding-left: 1rem;
+}
+
+
+.right-nav {
+   float: right;
+}
+
+
+.footer {
+   height: 9.375rem;
+   margin-left: 10.65rem;
+   width: calc(100% - 11rem);
+   position: absolute;
+   bottom: 0;
+}
+
+.container {
+   position: relative;
+}
+
+.left-nav {
+   float: left;
+}
+
+li, td, tr {
+   margin: 0.125rem;
+   font-family: 'Poppins', sans-serif;
+}
+
+nav a {
+   margin: 0.125rem;
+}
+
+.image {
+   text-align: center;
+   overflow: hidden;
+}
+
+.top-header {
+   height: 3rem;
+   margin-left: 10.65rem;
+   position: absolute;
+   top: 0;
+   width: calc(100% - 11rem);
+}
+
+.top-header ul {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+}
+
+.top-header li {
+   border-right: 0.0625rem solid #bbb;
+   display: inline-block;
+}
+
+.top-header li:last-child {
+   border-right: none;
+}
+
+.top-header li a {
+   display: block;
+   text-align: center;
+   text-decoration: none;
+   padding: 1rem 1rem 0;
+}
+
+.top-header li a:hover:not(.active) {
+   background-color: #212F37;
+}
+
+.search-button {
+   background-color: transparent;
+   border: 0;
+}
+
+.text-aside-container {
+   position: relative;
+}
+
+.display-table{ 
+   display: table;
+}
+
+/*/ Colors */
+
+.a-tags-sidebar {
+   color: #fafaf9;
+}
+
+.a-tags-body {
+   color: #98C6A4;
+}
+
+.p-text {
+   color: #0F1416;
+}
+
+.body-color {
+   background-color: #fafaf9;
+}
+
+.sidebar-color {
+   background-color: #ea6c57;
+}
+
+.fa {
+   color: #fafaf9;
+}
+
+.info-table tr {
+   background-color: #c3f9d1;
+}
+
+.info-table th {
+   background-color: #ea6c57;
+   color: white;
+}
+
+
+/*navigation index*/
 ol {
    list-style-type: none;
    counter-reset: item;
@@ -33,91 +234,29 @@ li ol>li:before {
    content: counters(item, ".") " ";
 }
 
-.navigation {
-   border: 1px solid lightgray;
-   width: 25rem;
+/*dropdown*/
 
-}
-
-.aside-div {
-   border: 1px solid lightgray;
-
-}
-
-main {
-   margin-left: 10.65rem;
-   padding-left: 0.625rem;
-   padding-right: 0.625rem;
-   bottom: 9.375rem;
-   padding-top: 5rem;
-   padding-bottom: 9.735rem;
-}
-
-.aside-right {
-   float: right;
-}
-
-.left-menu {
-   padding-right: 1.3rem;
-   width: 9.375rem;
-   background-color: #e3e1e1;
-   height: 100%;
-   position: absolute;
-}
-
-.left-menu ul {
-   list-style-type: none;
-   padding-left: 1rem;
-}
-
-
-.right-nav {
-   float: right;
-}
-
-
-.footer {
-   background-color: #e3e1e1;
-   height: 9.375rem;
-   margin-left: 10.65rem;
-   width: calc(100% - 11rem);
-   position: absolute;
-   bottom: 0;
-
-}
-
-.top-header {
-   background-color: #e3e1e1;
-   height: 5rem;
-   margin-left: 10.65rem;
-   position: absolute;
-   top: 0;
-   width: calc(100% - 11rem);
-}
-
-.container {
+.dropdown {
    position: relative;
-}
+   display: inline-block;
+ }
+ 
+ .dropdown-content {
+   display: none;
+   position: absolute;
+   background-color: #ea6c57;
+   width: 10.7rem;
+   z-index: 1;
+ }
+ 
+ .dropdown:hover .dropdown-content {
+   display: block;
+ }
+ .dropdown li:hover{
+   background-color: #212F37;
+ }
 
-.left-nav {
-   float: left;
-}
-
-.header-nav {
-   margin-top: 3rem;
-}
-
-.asides {}
-
-.four {
-   overflow: auto;
-   float: left;
-}
-
-li {
-   margin: 0.125rem;
-}
-
-nav a {
-   margin: 0.125rem;
-}
+ .dropdown-button {
+    background-color: transparent;
+    border: transparent;
+ }
