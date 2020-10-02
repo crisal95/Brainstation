@@ -48,7 +48,7 @@ body {
     height: 100%;
     display: flex;
     align-items: flex-end;
-    justify-content: center;
+    justify-content: flex-end;
 }
 
 .right-navbar i {
@@ -84,7 +84,7 @@ body {
 }
 @keyframes move {
     from {
-      margin-left: 80%;
+      margin-left: 90%;
     }
   
     to {
@@ -102,7 +102,7 @@ body {
   }
   .animation img {
  animation: 
-    move 3s ease infinite alternate, 
+    move 3s linear infinite alternate, 
     change-image 0.1s linear infinite alternate;
   }
   /**/
