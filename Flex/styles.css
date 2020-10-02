@@ -8,7 +8,6 @@ body {
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
 }
 
 /*navbar*/
@@ -17,7 +16,7 @@ body {
     height: 4rem;
     width: 100%;
     background-color: #42b9f5;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
     align-content: flex-end;
     flex-direction: row;
