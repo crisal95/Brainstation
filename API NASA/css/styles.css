@@ -1,0 +1,163 @@
+* {
+    font-family: 'Russo One', sans-serif;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.image {
+    display: none;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.image-button {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.button {
+    background-color: blue;
+    color: white;
+    height: 4rem;
+    box-shadow: 5px 4px 18px white;
+}
+.button:focus {
+    color: lightgray;
+}
+
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.button-text {
+    display: flex;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.space-image {
+    display: flex;
+    height: 60%;
+    width: 40%;
+    flex-direction: column;
+}
+
+.text {
+    color: white;
+    font-size: larger;
+}
+
+.image-title {
+    color: white;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+header {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(0, 0, 255, 1) 100%, rgba(0, 212, 255, 1) 100%);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+}
+
+.title {
+    color: white;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+.input-date {
+    height: 4rem;
+}
+
+.date {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+p{
+    text-align: justify;
+}
+
+
+
+@keyframes particleAnimation {
+    from {
+        left: -100px;
+    }
+
+    to {
+        left: calc(100% + 100px);
+    }
+}
+
+body {
+    background: black;
+}
+
+
+
+
+/*animation shhoting star https://codepen.io/echoghi/pen/dMzaPb */
+
+.p {
+    position: fixed;
+    left: 0px;
+    top: 50px;
+    width: 2px;
+    height: 2px;
+    background-color: white;
+    position: fixed;
+    animation-name: particleAnimation;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.p::before {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 100px;
+    right: 1px;
+    top: 0px;
+    height: 1px;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0.4) 100%);
+}
+
+.p-1 {
+    animation-duration: 10s;
+}
+
+.p-2 {
+    animation-duration: 5s;
+    top: 60%;
+}
+
+.p-3 {
+    animation-duration: 9s;
+    top: 80%;
+}
+
+.p-4 {
+    animation-duration: 12s;
+    top: 30%;
+}
+
+.p-5 {
+    animation-duration: 3s;
+    top: 90%;
+}

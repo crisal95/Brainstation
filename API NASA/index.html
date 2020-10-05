@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Cris NASA images</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/NASA_logo.svg" alt="NASA logo">
+        <h1 class="title">NASA space images</h1>
+    </header>
+    <div class="p p-1"></div>
+    <div class="p p-2"></div>
+    <div class="p p-3"></div>
+    <div class="p p-4"></div>
+    <div class="p p-5"></div>
+    <main>
+        <div class="image-button">
+            <button class="button"><span class="button-text">Click to see today NASA´s picture</span></button>
+        </div>
+        <div class="date">
+            <input id="input-date" class="input-date" type="text" placeholder="YYYY-MM-DD">
+            <button class="button"><span class="button-text">Search image by date</span></button>
+        </div>
+        <div class="space-image">
+            <img id="nasa-image" class="image" src="" alt="NASA space picture">
+            <h2 id="image-title" class="image-title"></h2>    
+            <p id="image-text" class="text"></p>
+        </div>
+    </main>
+
+    <script src="./js/apicalls.js" async defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</body>
+
+</html>
