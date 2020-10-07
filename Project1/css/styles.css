@@ -15,6 +15,7 @@ h1 {
     font-size: xxx-large;
     font-weight: bolder;
 }
+
 h2 {
     font-size: xx-large;
     font-weight: bolder;
@@ -25,11 +26,36 @@ footer {
     height: 10rem;
 }
 
+
+
+
 a {
     text-decoration: none;
+    font-size: large;
 }
-a:focus {
-    color: lightgray;
+
+a:hover {
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    position: relative;
+}
+
+a:after {
+    border-radius: 1em;
+    border-top: .05em solid #FBFAF7;
+    content: "";
+    position: absolute;
+    right: 100%;
+    bottom: .07em;
+    left: 0;
+    transition: right .4s cubic-bezier(0, .5, 0, 1);
+}
+
+a:hover:after {
+    right: 0;
 }
 
 footer {
@@ -61,7 +87,7 @@ li {
     height: 10rem;
 }
 
-.section {
+.right-section {
     height: 60%;
     width: 90%;
     display: flex;
@@ -69,38 +95,44 @@ li {
     justify-content: space-around;
     margin: 2rem;
     flex-shrink: 1;
+}
 
+.left-section {
+    height: 60%;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 2rem;
+    flex-shrink: 1;
 }
 
 .section-img {
-    width:40%;
+    width: 40%;
 }
 
-.right-section-image {
+.section-image {
     width: 100%;
-    height: auto;
-    margin: 0 0 0 2rem;
-}
-.left-section-image {
-    width: 100%;
-    height: auto;
-    margin: 0 2rem 0 0;
+    height: 100%;
 }
 
 .logo {
     height: 90%;
 }
+
 .nav-header {
     width: 40%;
     display: flex;
     justify-content: space-around;
 }
+
 .section-text {
     width: 50%;
     margin: 0;
     padding: 1rem;
     font-size: x-large;
 }
+
 .skills {
     display: flex;
     flex-direction: column;
@@ -110,6 +142,15 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
+    align-content: space-between;
+}
+
+.made {
+    align-self: flex-end;
+}
+
+.nav-option {
+    margin: 1rem;
 }
 
 
@@ -137,4 +178,120 @@ li {
 
 .general-font {
     font-family: 'Noto Sans JP', sans-serif;
+}
+
+.box-shadow {
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+.animated-box-shadow {
+
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+.animated-box-shadow:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+
+
+/*dropdowx*/
+/*dropdown*/
+
+.dropdown {
+    position: relative;
+    display: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    width: 15rem;
+    z-index: 1;
+    right: 0;
+
+}
+
+.dropdown-format {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+}
+
+
+
+
+
+
+/*media queries*/
+@media only screen and (max-width: 900px) {
+    .left-section {
+        flex-direction: column;
+    }
+
+    .right-section {
+        flex-direction: column-reverse;
+    }
+
+    .nav-header {
+        display: none;
+    }
+
+    .section-text {
+        width: auto;
+    }
+
+    .section-img {
+        width: auto;
+    }
+
+    h1 {
+        font-size: xx-large;
+    }
+
+    .dropdown {
+        display: inline-block;
+    }
+}
+
+
+/*animation*/
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes fadeOut {
+    from {
+        opacity: 100;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 100;
+    }
+}
+
+
+.rotate-animation {
+    animation: rotate 2s 1 linear;
+}
+.fadeout-animation {
+    animation: fadeOut 1s 1 linear;
+}
+.fadein-animation {
+    animation: fadeIn 1s 1 linear;
 }

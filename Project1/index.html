@@ -11,11 +11,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;900&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body class="first-color">
     <header class="header second-color">
-        <img class="logo" src="./images/logo.png" alt="Logo">
+        <img id="logo" class="logo" src="./images/simple-logo.png" alt="Logo">
         <nav class="nav-header">
             <a class="nav-option has-light-font general-font" href="#personal-section">Personal information</a>
             <a class="nav-option has-light-font general-font" href="#education-section">Education</a>
@@ -23,14 +24,26 @@
             <a class="nav-option has-light-font general-font" href="#skills-section">Skills</a>
             <a class="nav-option has-light-font general-font" href="#interests-section">Interests</a>
         </nav>
+        <div id="dropdown" class="dropdown">
+            <i class="fa fa-bars fa-2x has-light-font" aria-hidden="true"></i>
+            <nav id="dropdown-content" class="dropdown-content responsive-nav-header second-color">
+                <div class="dropdown-format">
+                    <a class="nav-option has-light-font general-font" href="#personal-section">Personal information</a>
+                    <a class="nav-option has-light-font general-font" href="#education-section">Education</a>
+                    <a class="nav-option has-light-font general-font" href="#experience-section">Working experience</a>
+                    <a class="nav-option has-light-font general-font" href="#skills-section">Skills</a>
+                    <a class="nav-option has-light-font general-font" href="#interests-section">Interests</a>
+                </div>
+            </nav>
+        </div>
     </header>
     <main>
 
         <header id="personal-section" class="section-header">
             <h1 class="h-color">Cristian Alvarado Oviedo</h1>
         </header>
-        <section class="section personal">
-            <div class="text third-color section-text general-font">
+        <section class="right-section personal">
+            <div class="text third-color section-text general-font box-shadow">
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                     labore
@@ -43,45 +56,45 @@
                     deserunt mollit anim id est laborum.
                 </p>
             </div>
-            <div class="section-img">
-                <img class="right-section-image" src="./images/profile.jpg" alt="Profile picture">
+            <div class="section-img animated-box-shadow">
+                <img class="section-image" src="./images/profile.jpg" alt="Profile picture">
             </div>
         </section>
 
 
-            <header id="education-section" class="section-header">
-                <h2 class="h-color">Education</h2>
-            </header>
-            <section  class="section education">
-                <div class="section-img">
-                    <img class="left-section-image" src="./images/ucr.jpg" alt="">
-                </div>
-                <div class="text third-color section-text general-font">
+        <header id="education-section" class="section-header">
+            <h2 class="h-color">Education</h2>
+        </header>
+        <section class="left-section education">
+            <div class="section-img animated-box-shadow">
+                <img class="section-image" src="./images/ucr.jpg" alt="">
+            </div>
+            <div class="text third-color section-text general-font box-shadow">
 
-                    <ul>
-                        <li>2014 - 2019, Universidad de Costa Rica
-                            Bachelor degree in Computer Science
-                        </li>
-                        <li>2019 - present, Universidad de Costa Rica
-                            Licentiate degree in Computer Science</li>
-                    </ul>
-                </div>
-            </section>
+                <ul>
+                    <li>2014 - 2019, Universidad de Costa Rica
+                        Bachelor degree in Computer Science
+                    </li>
+                    <li>2019 - present, Universidad de Costa Rica
+                        Licentiate degree in Computer Science</li>
+                </ul>
+            </div>
+        </section>
 
 
         <header id="experience-section" class="section-header">
             <h2 class="h-color">Working experience</h2>
         </header>
-        <section  class="section work">
-            <div class="text third-color section-text general-font">
+        <section class="right-section work">
+            <div class="text third-color section-text general-font box-shadow">
                 <ul>
                     <li> Sep 2019 - Apr 2020, Frontend Developer, Imactus
                         Working on an website for the medical specialities postgraduate program
                         from the Universidad de Costa Rica.</li>
                 </ul>
             </div>
-            <div class="section-img">
-                <img class="right-section-image" src="./images/computer.jpg" alt="">
+            <div class="section-img animated-box-shadow">
+                <img class="section-image" src="./images/computer.jpg" alt="">
             </div>
         </section>
 
@@ -89,11 +102,11 @@
         <header id="skills-section" class="section-header">
             <h2 class="h-color">Skills</h2>
         </header>
-        <section  class="programming section">
-            <div class="section-img">
-                <img class="left-section-image" src="./images/programming.png" alt="">
+        <section class="programming left-section">
+            <div class="section-img animated-box-shadow">
+                <img class="section-image" src="./images/programming.png" alt="">
             </div>
-            <div class="text third-color section-text general-font">
+            <div class="text third-color section-text general-font box-shadow">
                 <h3>Programming</h3>
                 <ul>
                     <li>Angular</li>
@@ -109,8 +122,8 @@
         </section>
 
 
-        <section class="softSkills section">
-            <div class="text third-color section-text general-font">
+        <section class="softSkills right-section">
+            <div class="text third-color section-text general-font box-shadow">
                 <h3>Soft Skills</h3>
                 <ul>
                     <li>Teamwork</li>
@@ -121,21 +134,21 @@
                     <li>Empathy</li>
                 </ul>
             </div>
-            <div class="section-img">
-                <img class="right-section-image" src="./images/teamwork.png" alt="">
+            <div class="section-img animated-box-shadow">
+                <img class="section-image" src="./images/teamwork.png" alt="">
             </div>
         </section>
 
 
 
-        <header  id="interests-section" class="section-header">
+        <header id="interests-section" class="section-header">
             <h2 class="h-color">Interests</h2>
         </header>
-        <section class="section interests">
-            <div class="section-img">
-                <img class="left-section-image" src="./images/nature.jpg" alt="">
+        <section class="left-section interests">
+            <div class="section-img animated-box-shadow">
+                <img class="section-image" src="./images/nature.jpg" alt="">
             </div>
-            <div class="text third-color section-text general-font">
+            <div class="text third-color section-text general-font box-shadow">
                 <ul>
                     <li>Technology</li>
                     <li>Sports</li>
@@ -148,7 +161,9 @@
 
     </main>
     <footer class="second-color footer-section">
-        <p class="has-light-font general-font">Web page made by Cristian :)</p>
+        <div><i class="fa fa-linkedin-square fa-2x has-light-font" aria-hidden="true"></i><a
+                class="nav-option has-light-font general-font"
+                href="https://www.linkedin.com/in/cristian-alvarado-24b3ab119/">LinkedIn</a> </div>
     </footer>
 
     <script src="./js/cv.js" async defer></script>
