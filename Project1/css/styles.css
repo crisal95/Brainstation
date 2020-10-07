@@ -290,8 +290,8 @@ li {
     animation: rotate 2s 1 linear;
 }
 .fadeout-animation {
-    animation: fadeOut 1s 1 linear;
+    animation: fadeOut 0.5s 1 linear;
 }
 .fadein-animation {
-    animation: fadeIn 1s 1 linear;
+    animation: fadeIn 0.5s 1 linear;
 }
