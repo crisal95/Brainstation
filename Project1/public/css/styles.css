@@ -24,6 +24,9 @@ h2 {
 
 footer {
     height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 
@@ -70,7 +73,7 @@ li {
     height: 7rem;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     position: sticky;
     top: 0;
@@ -118,7 +121,9 @@ li {
 
 .logo {
     height: 90%;
+    padding: 0 0 0 1rem;
 }
+
 
 .nav-header {
     width: 40%;
@@ -129,20 +134,23 @@ li {
 .section-text {
     width: 50%;
     margin: 0;
-    padding: 1rem;
+    padding: 2rem;
     font-size: x-large;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .skills {
     display: flex;
-    flex-direction: column;
+    
 }
 
 .footer-section {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     align-content: space-between;
+    flex-direction: row;
 }
 
 .made {
@@ -156,7 +164,8 @@ li {
 
 /*colors*/
 .first-color {
-    background-color: #3D9CA7;
+    background-color: #FBFAF7;
+    
 }
 
 .second-color {
@@ -164,12 +173,14 @@ li {
 }
 
 .third-color {
-    background-color: #FBFAF7;
+    background-color: #3D9CA7;
+    
 }
 
 .has-light-font {
     color: #FBFAF7;
 }
+
 
 .h-color {
     color: #C8F7C5;
@@ -202,6 +213,7 @@ li {
 .dropdown {
     position: relative;
     display: none;
+    padding-right: 1rem;
 }
 
 .dropdown-content {
@@ -210,6 +222,7 @@ li {
     width: 15rem;
     z-index: 1;
     right: 0;
+    top: 4rem;
 
 }
 
@@ -252,6 +265,10 @@ li {
 
     .dropdown {
         display: inline-block;
+    }
+    .footer-section {
+        flex-direction: column;
+        justify-content: center;
     }
 }
 
