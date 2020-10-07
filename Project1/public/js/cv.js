@@ -20,6 +20,6 @@ $(document).ready(function() {
         setTimeout(function () {
             $("#logo").attr("src", "../images/logo.png");
             $("#logo").addClass("fadein-animation"); 
-        }, 500);
+        }, 450);
       
     }
