@@ -53,6 +53,14 @@ const app = (() => {
       }).catch((countryName) => {
       logError(countryName);
     });
+
+    /*andres*/ 
+    /* return getImageName(country)
+    .catch(fallbackName)
+    .then(fetchFlag)
+    .then(processFlag)
+    .then(appendFlag)
+    .catch(logError);*/
   }
 
 
