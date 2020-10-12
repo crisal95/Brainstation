@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>My To-do list!!</h1>
+    </header>
+    <main>
+        <div class="todoInput">
+            <input type="text" name="todo" id="todo" placeholder="Write a new assignment">
+            <button onclick="newTodo()" id="inputButton">Add To-Do</button>
+        </div>
+        <div class="table-section">
+            <table class="table" id="table">
+                <tr>
+                    <th>Done</th>
+                    <th>To-Do</th>
+                </tr>
+            </table>
+        </div>
+    </main>
+    <script src="../model/model.js"></script>
+    <script src="../controller/controller.js"></script>
+</body>
+
+</html>
