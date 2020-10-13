@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./showData.css";
+import Img from "../img/img";
 
 class ShowData extends Component {
   constructor(props) {
@@ -20,7 +21,7 @@ class ShowData extends Component {
           <span className="info-title">Web site:</span>{" "}
           <a href={data.url}>{data.url}</a>
         </p>
-        <img src={data.image} alt="Show cover" />
+        <Img src={data.image} />
       </div>
     );
   }
