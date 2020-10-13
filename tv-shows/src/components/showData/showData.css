@@ -1,0 +1,11 @@
+.show-info-container {
+  background-color: #72E9CF;
+  height: 100%;
+  text-align: center;
+  overflow-y: scroll;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
