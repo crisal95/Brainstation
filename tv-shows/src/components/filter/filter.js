@@ -26,7 +26,7 @@ class Filter extends Component {
     var showInfo = this.state.showInfo;
     return (
       <div className="filter">
-        <input type="text" onKeyDown={this.filter} placeholder="Search an episode"/>
+        <input type="text" onChange={this.filter} placeholder="Search an episode"/>
         <List data={childData} showInfo={showInfo} />
       </div>
     );

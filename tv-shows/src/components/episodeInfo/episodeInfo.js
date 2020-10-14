@@ -4,10 +4,12 @@ import "./episodeInfo.css";
 class EpisodeInfo extends Component {
   constructor(props) {
     super(props);
+    
   }
 
   render() {
-    var  data  = this.props;
+    var  data  = this.props.data;
+
     return (
       <div className="episode-info-container">
           <h3>Episode info</h3>

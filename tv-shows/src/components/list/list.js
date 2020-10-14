@@ -6,6 +6,13 @@ import EpisodeInfo from "../episodeInfo/episodeInfo";
 class List extends Component {
   constructor(props) {
     super(props);
+    this.state = {
+      eInfo: "",
+    }
+  }
+
+    getEpisodeInfo(e,item) {
+   this.setState({eInfo : item});
   }
 
 
@@ -18,8 +25,9 @@ class List extends Component {
             <h2>Episodes list</h2>
             <ul className="episodes-list">
               {data.map((item) => (
-               <li key={item.id}>{item.name}<EpisodeInfo season={item.season} airdate={item.airdate} summary={item.summary} /></li> 
+               <li key={item.id} onClick={(e) => this.getEpisodeInfo(e,item)}>{item.name}</li> 
               ))}
+              <EpisodeInfo data={this.state.eInfo} />
             </ul>
           </div>
           <div id="episodeInfo" className="episodeInfo">
