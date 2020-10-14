@@ -1,0 +1,8 @@
+header {
+    height: 4rem;
+    background-color: gray;
+    padding: 1rem;
+}
+header h1 {
+    margin: 0;
+}

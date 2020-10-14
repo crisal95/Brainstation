@@ -24,8 +24,9 @@ class FilterHeroes extends Component {
     var { childData } = this.state;
     return (
       <div className="filter">
-        <input type="text" onChange={this.filter} placeholder="Search a Hero"/>
-        <HeroesList data={childData}/>
+        <div> <input className="input-filter" input type="text" onChange={this.filter} placeholder="Search a Hero"/></div>
+        
+        <div><HeroesList data={childData}/></div>
       </div>
     );
   }
