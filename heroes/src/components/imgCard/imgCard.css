@@ -1,0 +1,19 @@
+.imgCard-container {
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+    border: 1px solid white;
+    margin: 2rem;
+}
+.img {
+    width: 100%;
+    height: auto;
+}
+.title {
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
