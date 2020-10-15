@@ -19,6 +19,7 @@ const useStyles = makeStyles((theme) => ({
   paper: {
     position: "absolute",
     width: "70%",
+    height:"80%",
     display: "flex",
     flexShrink: 1,
     backgroundColor: theme.palette.background.paper,
@@ -28,6 +29,7 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "row",
     flexFlow: "wrap",
     justifyContent: "space-around",
+    overflow: "scroll",
   },
   button: {
 backgroundColor: "transparent",
