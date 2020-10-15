@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import "./heroesList.css";
 import ImgCard from "../imgCard/imgCard";
 
-
 class HeroesList extends Component {
   constructor(props) {
     super(props);
@@ -35,20 +34,22 @@ class HeroesList extends Component {
   }
 
   render() {
-    var { data } = this.props;
+    var cardsAmount = this.props.amount;
+    var data = this.props.data;
     return data ? (
-      <div className="heroes-container">
-        {data.map((item) => (
-          <div
-            key={item.id}
-            className="item"
-          >
-            <ImgCard
-              data={this.getCardInfo(item)}
-              heroInfo={this.getHeroInfo(item)}
-            />
-          </div>
-        ))}
+      <div>
+        <p className="counter">Amount of characters after filtering: {cardsAmount}</p>
+
+        <div className="heroes-container">
+          {data.map((item) => (
+            <div key={item.id} className="item">
+              <ImgCard
+                data={this.getCardInfo(item)}
+                heroInfo={this.getHeroInfo(item)}
+              />
+            </div>
+          ))}
+        </div>
       </div>
     ) : (
       <></>

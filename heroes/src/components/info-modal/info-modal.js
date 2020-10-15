@@ -18,7 +18,7 @@ function getModalStyle() {
 const useStyles = makeStyles((theme) => ({
   paper: {
     position: "absolute",
-    width: 900,
+    width: "70%",
     display: "flex",
     flexShrink: 1,
     backgroundColor: theme.palette.background.paper,
@@ -29,6 +29,11 @@ const useStyles = makeStyles((theme) => ({
     flexFlow: "wrap",
     justifyContent: "space-around",
   },
+  button: {
+backgroundColor: "transparent",
+color: "white",
+
+  }
 }));
 
 export default function InfoModal(heroInfo) {
@@ -51,11 +56,11 @@ export default function InfoModal(heroInfo) {
         <Img data={heroInfo.images.md} />
       </div>
       <div>
-        <h2>Hero information</h2>
+        <h2>Character information</h2>
         <p>
           <span className="info-title">Name: </span> {heroInfo.name}
         </p>
-        <h3>appearance</h3>
+        <h3>Appearance</h3>
         <p>
           <span className="info-title">Gender: </span>{" "}
           {heroInfo.appearance.gender}
@@ -98,8 +103,8 @@ export default function InfoModal(heroInfo) {
 
   return (
     <div>
-      <button type="button" onClick={handleOpen}>
-        Open Modal
+      <button type="button" className={classes.button} onClick={handleOpen}>
+        Show info
       </button>
       <Modal
         open={open}

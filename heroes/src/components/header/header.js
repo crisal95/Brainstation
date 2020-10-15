@@ -5,7 +5,7 @@ class Header extends Component {
   render() {
     return (
       <header>
-        <h1>Heroes List</h1>
+        <h1>Heroes and Villians List</h1>
       </header>
     );
   }
