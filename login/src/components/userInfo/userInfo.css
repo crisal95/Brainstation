@@ -1,0 +1,8 @@
+.info {
+border: 2px solid black;
+background-color: whitesmoke;
+margin: 1rem;
+}
+span {
+    font-weight: bold;
+}

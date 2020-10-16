@@ -1,0 +1,17 @@
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-around;
+}
+
+label {
+    display: block;
+}
+
+.email-container {
+    margin: 1rem;
+}
+.password-container {
+    margin: 1rem;
+}
