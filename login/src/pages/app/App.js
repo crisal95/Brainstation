@@ -48,7 +48,6 @@ callbackFunction = (childData, user) => {
             <AuthButton />
                 <Link className="link" to="/">Home</Link>
           </nav>
-
           <Switch>
             <Route path="/login">
               <Login onLogin={this.callbackFunction} />
@@ -75,6 +74,7 @@ const fakeAuth = {
   },
 };
 
+
 function AuthButton() {
   let history = useHistory();
 
@@ -84,7 +84,6 @@ function AuthButton() {
       <button 
         onClick={() => {
           fakeAuth.signout(() => history.push("/login"));
-          localStorage.removeItem("user");
           Cookies.remove("user");
         }}
       >
