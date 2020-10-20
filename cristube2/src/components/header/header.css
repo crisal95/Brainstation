@@ -1,0 +1,23 @@
+header {
+    height: 4rem;
+    background-color: #303030;
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+header h1 {
+    margin: 0;
+    color: white;
+}
+
+.link a {
+    color: white;
+    text-decoration: none;
+}
+.link a:hover {
+    text-decoration: underline;
+}
+
